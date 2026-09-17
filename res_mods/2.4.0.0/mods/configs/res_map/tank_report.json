@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Layout",
+    "path": "coui://gui/gameface/mods/tank_report/ReportWindow.html",
+    "parameters": {
+      "extension": "",
+      "entrance": "ReportWindow",
+      "impl": "gameface"
+    },
+    "itemID": "tank_report/ReportWindow"
+  },
+  {
+    "type": "Layout",
+    "path": "coui://gui/gameface/mods/tank_report/FooterButton.html",
+    "parameters": {
+      "extension": "",
+      "entrance": "FooterButton",
+      "impl": "gameface"
+    },
+    "itemID": "tank_report/FooterButton"
+  }
+]

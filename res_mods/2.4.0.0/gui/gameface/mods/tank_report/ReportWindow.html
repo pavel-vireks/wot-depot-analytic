@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tank Report</title>
+    <link rel="stylesheet" crossorigin href="./ReportWindow.css">
+</head>
+<body>
+    <div id="app">
+        <div class="top">
+            <div class="title">Выгрузка ангара</div>
+            <div class="status" id="status"></div>
+            <div class="spacer"></div>
+            <div class="btn" id="refresh">Обновить</div>
+            <div class="btn" id="browser">Открыть в браузере</div>
+            <div class="close" id="close">×</div>
+        </div>
+        <div class="meta" id="meta"></div>
+        <div class="tabs">
+            <div class="tab on" id="tab-tanks">Танки</div>
+            <div class="tab" id="tab-summary">Сводка по предметам</div>
+            <div class="tab" id="tab-gear">Оборудование</div>
+            <div class="tab" id="tab-demount">Снятие</div>
+            <div class="spacer"></div>
+            <div class="count" id="count"></div>
+        </div>
+        <div class="controls" id="controls">
+            <div class="searchbox">
+                <input class="search" id="search" type="text" placeholder="Поиск по всем колонкам">
+                <div class="clear" id="clear">×</div>
+            </div>
+            <div class="filters" id="filters"></div>
+            <div class="flags" id="flags"></div>
+            <div class="lnk" id="back">назад</div>
+            <div class="lnk" id="reset">сбросить</div>
+            <div class="lnk" id="expand">развернуть все</div>
+        </div>
+        <div class="controls sub" id="controls-sub">
+            <div class="lbl">Содержимое танка:</div>
+            <div class="flags" id="content-filters"></div>
+        </div>
+        <div class="controls sub" id="dem-controls">
+            <div class="lbl">Показывать:</div>
+            <div class="flags" id="dem-grades"></div>
+            <div class="spacer"></div>
+            <div class="lnk" id="dem-all">отметить видимое</div>
+            <div class="lnk" id="dem-none">снять отметки</div>
+            <div class="lnk" id="dem-rescan">перечитать ангар</div>
+        </div>
+        <div class="thead" id="thead"></div>
+        <div class="content" id="content"></div>
+        <div class="dembar" id="dembar">
+            <div class="sel" id="dem-count"></div>
+            <div class="cost" id="dem-cost"></div>
+            <div class="spacer"></div>
+            <div class="btn accent" id="dem-apply">Снять выбранное</div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="mbox">
+            <div class="mhead">Снять оборудование?</div>
+            <div class="mbody" id="modal-body"></div>
+            <div class="mfoot">
+                <div class="chk" id="modal-kit">
+                    <div class="box"></div>
+                    <span id="modal-kit-label"></span>
+                </div>
+                <div class="spacer"></div>
+                <div class="btn" id="modal-cancel">Отмена</div>
+                <div class="btn accent" id="modal-ok">Снять</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" crossorigin src="./ReportWindow.js"></script>
+</body>
+</html>

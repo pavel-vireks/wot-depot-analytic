@@ -1,0 +1,27 @@
+.tankReportButton {
+    margin-right: 6rem;
+    width: 32rem;
+    height: 32rem;
+    position: relative;
+    cursor: pointer;
+}
+.tankReportButton .tankReportIcon {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 28rem;
+    height: 28rem;
+    opacity: 0.7;
+    pointer-events: none;
+    background-image: url(coui://gui/maps/icons/library/currency/depot_96x96.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.2s ease;
+}
+.tankReportButton:hover .tankReportIcon {
+    opacity: 1;
+}
+.tankReportButton:active .tankReportIcon {
+    opacity: 0.5;
+}
