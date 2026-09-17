@@ -145,3 +145,5 @@ Put `tank_report.json` into the game folder:
 The mod is distributed in compiled form (the window files are HTML/CSS/JS, which
 the client reads as is). `net.openwg.gameface` is a third-party library from the
 OpenWG project, included for ease of installation, obtained from the repository https://gitlab.com/openwg/wot.gameface/-/releases/v1.1.6
+
+The mod was created with the help of Claude, an AI assistant by Anthropic.
